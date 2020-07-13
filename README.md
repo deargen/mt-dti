@@ -7,6 +7,13 @@ An official Molecule Transformer Drug Target Interaction (MT-DTI) model
 ## Required Files
 
 * Download [data.tar.gz](https://drive.google.com/file/d/16dTynXCKPPdvQq4BiXBdQwNuxilJbozR/view?usp=sharing)
+	
+	```
+	cd mt-dti
+	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=16dTynXCKPPdvQq4BiXBdQwNuxilJbozR' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=16dTynXCKPPdvQq4BiXBdQwNuxilJbozR" -O data.tar.gz && rm -rf /tmp/cookies.txt
+	tar -zxvf data.tar.gz
+	```
+	
 	* This includes;
 		* Orginal KIBA dataset from [DeepDTA](https://github.com/hkmztrk/DeepDTA)
 		* tfrecord for KIBA dataset
